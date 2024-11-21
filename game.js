@@ -1,13 +1,22 @@
-// game.js
+# Simple script to greet and display a list of games
 
-document.addEventListener("DOMContentLoaded", () => {
-    const gameLinks = document.querySelectorAll('.game-list a');
-
-    gameLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();  // Prevent the default action (opening the link)
-            alert("You are about to play a fun game!");
-            window.open(e.target.href, "_blank");  // Open the link in a new tab
-        });
-    });
-});
+def greet_and_list_games():
+    print("Hi!")
+    print("Here are some games you might like:")
+    
+    games = [
+        "The Legend of Zelda: Breath of the Wild",
+        "Minecraft",
+        "Among Us",
+        "Fortnite",
+        "Grand Theft Auto V",
+        "Red Dead Redemption 2",
+        "Overwatch",
+        "Animal Crossing: New Horizons"
+    ]
+    
+    for game in games:
+        print(f"- {game}")
+        
+# Call the function
+greet_and_list_games()
