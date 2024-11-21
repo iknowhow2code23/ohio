@@ -1,38 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Game Hub</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Game Hub!</h1>
-        <p>Check out the games below!</p>
-    </header>
+# Simple script to greet and display a list of games
 
-    <main> <!-- Added the missing '>' here -->
-        <section class="game-list">
-            <h2>Available Games</h2>
-            <ul>
-                <li><a href="https://poki.com/" target="_blank">https:/</a></li>
-                <li><a href="https://ggrules.github.io/eaglercrfat/" target="_blank">https://ggrules.github.io/eaglercrfat/</a></li>
-                <li><a href="https://www.crazygames.com/" target="_blank">Crazy Games</a></li>
-            </ul>
-        </section>
+def greet_and_list_games():
+    print("Hi!")
+    print("Here are some games you might like:")
+    
+    games = [
+        "The Legend of Zelda: Breath of the Wild",
+        "https://www.google.com/search?q=google+doodle+games&rlz=1CAEQPB_enUS1074&oq=go&aqs=chrome.1.69i59l2j46i131i199i433i465i512j0i131i433i512j69i57j69i60l3.8265j0j1&sourceid=chrome&ie=UTF-8&safe=active&ssui=on,
+        "Among Us",
+        "Fortnite",
+        "Grand Theft Auto V",
+        "Red Dead Redemption 2",
+        "Overwatch",
+        "Animal Crossing: New Horizons"
+    ]
+    
+    for game in games:
+        print(f"- {game}")
+        
+# Call the function
+greet_and_list_games()
 
-        <section class="about">
-            <h2>About</h2>
-            <p>This website is a collection of fun browser games. Enjoy!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Game Hub. All rights reserved.</p>
-    </footer>
-
-    <script src="game.js"></script>
-</body>
-</html>
